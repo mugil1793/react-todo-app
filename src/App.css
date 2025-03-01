@@ -1,38 +1,114 @@
 .App {
+  font-family: Arial, sans-serif;
   text-align: center;
+  background-color: #f4f4f9;
+  padding: 20px;
+  max-width: 500px;
+  min-height: 30vh;
+  margin: 50px auto;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header {
+  margin-bottom: 20px;
+  background-color: #f4f4f9;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.input-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin-bottom: 20px;
+  background-color: #f4f4f9;
+}
+
+.input-container input {
+  width: 70%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #1e1616;
+  border-radius: 5px;
+  outline: none;
+  background-color: #f4f4f9;
+}
+::placeholder {
+  background-color: #f4f4f9;
+}
+.input-container button {
+  padding: 10px 15px;
+  font-size: 16px;
+  margin-left: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #28a745;
   color: white;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.input-container button:hover {
+  background-color: #218838;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.task-list {
+  list-style: none;
+  padding: 0;
+  background-color: #f4f4f9;
+}
+
+.task {
+  background-color: white;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.task.completed {
+  text-decoration: line-through;
+  color: #888;
+}
+.taskname {
+  background-color: white;
+}
+.filterselect {
+  background-color: #f4f4f9;
+  padding: 5px 10px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+  margin-left: 11px;
+  float: left;
+  width: 27%;
+  height: 5vh;
+}
+
+.filterselect option {
+  background-color: #f4f4f9;
+}
+.filter-container {
+  background-color: #f4f4f9;
+  width: 100%;
+  float: left;
+}
+.empty-list {
+  background-color: #f4f4f9;
+  font-size: 16px;
+}
+.defalut-container {
+  background-color: #f4f4f9;
+}
+.task button {
+  background-color: #dc3545;
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.task button:hover {
+  background-color: #c82333;
 }
